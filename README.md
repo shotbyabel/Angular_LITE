@@ -9,11 +9,11 @@
 ####index.html
 
 1. rename your app if you wish LINE 28 `ng-app"myApp"`
-  - remember to change this mame in thwe module and controller.
+  - remember to update this mame in the app module and controller.
 
 2. Bootstrap Navbar included, edit as desired.
 
-3. Angular, ui-router, jquery and Bootsrap CDN's included if you wish to install/download them google is your bestie!
+3. Angular, ui-router, jquery and Bootsrap CDN's included if you wish to install/download them instead google is your bestie!
 
 3. create a directory `js` and inside touch two files `app.js` and `MainController.js`
   - or simply create your own directories and js files.
