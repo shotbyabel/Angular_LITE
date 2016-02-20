@@ -1,0 +1,84 @@
+<!--A N G U L A R w/ UI-ROUTER, BOOTSTRAP
+**QUICK WAY TO RUN THIS APP with a server 
+on your command line enter** 
+`npm install http-server` followed by `http-server`
+create an app.js and in the file type in the uirouterapp snippet
+create a MainController.js and run ngcontrol snippet
+-->
+<!DOCTYPE html>
+<!-- a Bootstrap & AngularJS Ready Index Boilet Plate -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Your description goes here">
+    <meta name="keywords" content="one, two, three">
+    <title>YOUR TITLE</title>
+    <!-- external CSS link -->
+    <!--
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/custom.css"> -->
+    <!-- B O O T S T R A P  C D N-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>body {font-family: Tahoma, Arial;}h1 {color: gray;}#container {margin-left: 5%;}
+    </style>
+</head>
+<!-- ***A N G U L A R  T A G S*** -->
+<body ng-app="myApp">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">ui-router</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a ui-sref="/home">HOME</a></li>
+        <li><a ui-sref="/about">ABOUT</a></li>
+        <li><a ui-sref="/more">MORE</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+<div id="container">
+
+    <header>
+        <!-- <h1>UI-Router</h1> -->
+    </header>
+    <h3></h3>
+    <!--         ***Q U I C K  A N G U L A R  XSAMPLE*** -->
+    <!-- <div>{{5+5}}</div> -->
+    <!-- Basic data binding test -->
+    <!-- <div ng-model=""> -->
+    <!--          <textarea ng-model="text" placeholder="type in here.."></input> : 
+                <span>{{text}}</span> -->
+    <!--             <input ng-model="text" placeholder="type in here.."></input> : 
+                <span>{{text}}</span> -->
+</div><!--#container -->
+<!--         <footer>
+            &copy; <small>Made by Abel Alejandro H | Los Angeles, CA 2016</small>
+        </footer> -->
+<!-- F R A M E W O R K  LIBRARIES -->
+<!-- jQUERY -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- ANGULARjs -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<!-- UI-ROUTER - ANGULARjs -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<!-- BOOTSTRAP JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- A P P  LIBRARIES -->
+<script src="js/app.js"></script>
+<script src="js/MainController.js"></script>
+<ui-view></ui-view>  
+</body>
+</html>
